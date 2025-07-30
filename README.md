@@ -12,7 +12,7 @@ Traditional neural networks, which are trained for healthcare prediction tasks, 
 Inside each of the directories the datasets should already be loaded as well as the Jupyter Notebooks. The user simply has to install the Python packages that are refered inside of the code, and it can be ran end-to-end.
 
 ## Experiments
-### 1. Generalizability Experiment - Cross-Dataset Transfer Learning
+### 1. Generalizability Experiment
 
 Objective: Test whether CausalNet's learned causal relationships improve generalization across different datasets compared to standard neural networks.
 
@@ -27,7 +27,7 @@ Key Results:
 
 This demonstrates that CausalNet learns more generalizable causal relationships rather than dataset-specific correlations.
 
-### 2. Protein Signaling Dataset - Causal Discovery Validation
+### 2. Protein Signaling Dataset Experiment
 
 Objective: Compare CausalNet's causal discovery performance against established ground truth from Sachs et al.'s protein signaling pathway data.
 
@@ -38,7 +38,7 @@ Results:
 - Full graph: 55 edges, SHD = 64, with 4 correctly identified relationships
 - Shows CausalNet can recover some true causal structures but may infer spurious relationships without domain constraints
 
-### 3. Cancer Dataset - Counterfactual Analysis
+### 3. Counterfactual Analysis on a Cancer Dataset
 
 Objective: Demonstrate CausalNet's ability to generate actionable counterfactual explanations for individual predictions.
 Setup: Trained on cancer prediction dataset with 8 features (age, gender, BMI, smoking, genetic risk, physical activity, alcohol intake, cancer history).
