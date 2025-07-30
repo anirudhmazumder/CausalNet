@@ -1,5 +1,5 @@
 <h1 align="center">
-<b>CausalNet</b>
+<b>CausalNet: End-to-End Causal Structure Learning and Counterfactual Explanations in Neural Networks</b>
 </h1>
 <h3 align="center">
 <b>By: Anirudh Mazumder</b>
