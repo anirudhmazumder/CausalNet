@@ -13,8 +13,11 @@ Inside each of the directories the datasets should already be loaded as well as 
 
 ## Experiments
 1. Generalizability Experiment - Cross-Dataset Transfer Learning
+
 Objective: Test whether CausalNet's learned causal relationships improve generalization across different datasets compared to standard neural networks.
+
 Setup: Trained both CausalNet and a standard neural network on one diabetes dataset, then evaluated performance on a second diabetes dataset from a different source. Used matched variables (Age, BMI, Blood Pressure) with standardized preprocessing and balanced class distributions.
+
 Key Results:
 - Same distribution performance: Standard network slightly outperformed CausalNet in accuracy (77.11% vs 72.24%)
 - Cross-dataset generalization: CausalNet significantly outperformed the standard network
@@ -25,18 +28,25 @@ Key Results:
 This demonstrates that CausalNet learns more generalizable causal relationships rather than dataset-specific correlations.
 
 2. Protein Signaling Dataset - Causal Discovery Validation
+
 Objective: Compare CausalNet's causal discovery performance against established ground truth from Sachs et al.'s protein signaling pathway data.
+
 Setup: Used 7,466 samples with 11 protein variables. Applied threshold filtering to identify the strongest causal relationships.
+
 Results:
 - Thresholded graph (top 85% edges): 18 edges, SHD = 29, with 3 correctly identified relationships
 - Full graph: 55 edges, SHD = 64, with 4 correctly identified relationships
 - Shows CausalNet can recover some true causal structures but may infer spurious relationships without domain constraints
 
 3. Cancer Dataset - Counterfactual Analysis
+
 Objective: Demonstrate CausalNet's ability to generate actionable counterfactual explanations for individual predictions.
 Setup: Trained on cancer prediction dataset with 8 features (age, gender, BMI, smoking, genetic risk, physical activity, alcohol intake, cancer history).
+
 Performance: 84.67% accuracy, 92.27% AUC
+
 Counterfactual Analysis Results: Successfully generated interpretable "what-if" scenarios showing how changing individual risk factors affects cancer prediction. Most relationships aligned with medical knowledge (e.g., increased smoking → higher cancer risk, increased physical activity → lower cancer risk), though some anomalies were observed (BMI relationship), indicating areas for model improvement.
+
 Impact: Unlike traditional explainable AI that only shows feature importance, CausalNet provides actionable insights showing how interventions on specific variables propagate through the causal network to affect final predictions.
 
 ## Datasets
