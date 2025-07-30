@@ -27,7 +27,7 @@ Key Results:
     - Accuracy: 67.12% vs 66.52% (p < 3.9×10⁻¹⁴, Cohen's d = 0.88)
     - Win rate: CausalNet achieved higher AUC 93% of trials, higher accuracy 78% of trials
 
-This demonstrates that CausalNet learns more generalizable causal relationships rather than dataset-specific correlations.
+This demonstrates that CausalNet learned more generalizable causal relationships rather than dataset-specific correlations for the datasets used.
 
 ### 2. Protein Signaling Dataset Experiment
 
