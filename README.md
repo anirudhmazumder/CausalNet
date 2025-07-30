@@ -47,7 +47,7 @@ Setup: Trained on cancer prediction dataset with 8 features (age, gender, BMI, s
 
 Performance: 84.67% accuracy, 92.27% AUC
 
-Counterfactual Analysis Results: Successfully generated interpretable "what-if" scenarios showing how changing individual risk factors affects cancer prediction. Most relationships aligned with medical knowledge (e.g., increased smoking → higher cancer risk, increased physical activity → lower cancer risk), though some anomalies were observed (BMI relationship), indicating areas for model improvement.
+Counterfactual Analysis Results: Successfully generated interpretable what-if scenarios showing how changing individual risk factors affects cancer prediction. Most relationships aligned with medical knowledge (e.g., increased smoking → higher cancer risk, increased physical activity → lower cancer risk), though some anomalies were observed (BMI relationship), indicating areas for model improvement.
 
 Impact: Unlike traditional explainable AI that only shows feature importance, CausalNet provides actionable insights showing how interventions on specific variables propagate through the causal network to affect final predictions.
 
