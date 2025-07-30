@@ -14,6 +14,8 @@ Inside each of the directories the datasets should already be loaded as well as 
 ## Experiments
 ### 1. Generalizability Experiment
 
+<img width="1280" height="577" alt="Generalizability_Experiment_Graphic" src="https://github.com/user-attachments/assets/1cf6d498-aa0b-443e-9802-e76cf597c76d" />
+
 Objective: Test whether CausalNet's learned causal relationships improve generalization across different datasets compared to standard neural networks.
 
 Setup: Trained both CausalNet and a standard neural network on one diabetes dataset, then evaluated performance on a second diabetes dataset from a different source. Used matched variables (Age, BMI, Blood Pressure) with standardized preprocessing and balanced class distributions.
