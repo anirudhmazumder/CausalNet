@@ -31,7 +31,7 @@ This demonstrates that CausalNet learned more generalizable causal relationships
 
 ### 2. Protein Signaling Dataset Experiment
 
-Objective: Compare CausalNet's causal discovery performance against established ground truth from Sachs et al.'s protein signaling pathway data.
+Objective: Compare CausalNet's causal discovery performance against an established ground truth protein signaling pathway dataset.
 
 Setup: Used 7,466 samples with 11 protein variables. Applied threshold filtering to identify the strongest causal relationships.
 
