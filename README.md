@@ -1,4 +1,6 @@
-# CausalNet
+<h1 align="center">
+<b>CausalNet</b>
+</h1>
 <h3 align="center">
 <b>By: Anirudh Mazumder</b>
 </h3>
